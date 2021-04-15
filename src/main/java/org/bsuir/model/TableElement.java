@@ -8,6 +8,8 @@ public class TableElement {
     private int circulation;
     private int finalTomAmount;
 
+    public TableElement() {}
+
     public TableElement(String bookName, String authorInitials, String publisherInitials, int tomAmount, int circulation, int finalTomAmount) {
         this.bookName = bookName;
         this.authorInitials = authorInitials;

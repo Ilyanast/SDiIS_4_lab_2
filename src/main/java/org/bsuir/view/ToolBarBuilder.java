@@ -28,15 +28,10 @@ public class ToolBarBuilder {
         toolBar.getItems().addAll(newLineButton, new Separator(), findButton, new Separator(), deleteButton);
     }
 
-    //TODO убрать потом
-
     private void addToolBarItems(Button newLineButton, Button findButton, Button deleteButton) {
         toolBarItems[0] = newLineButton;
-        newLineButton.setOnMouseClicked(mouseEvent -> new NewLineDialog());
         toolBarItems[1] = findButton;
-        findButton.setOnMouseClicked(mouseEvent -> new FindDialog());
         toolBarItems[2] = deleteButton;
-        deleteButton.setOnMouseClicked(mouseEvent -> new DeleteDialog());
     }
 
     public Button[] getToolBarItems() {

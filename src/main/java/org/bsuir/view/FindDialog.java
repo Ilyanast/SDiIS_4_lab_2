@@ -107,11 +107,11 @@ public class FindDialog {
         rootElement.getChildren().addAll(findTable);
     }
 
-    public Stage getDialogStage() {
-        return dialogStage;
+    public TextField[] getTextFields() {
+        return textFields;
     }
 
     public Button getFindButton() { return findButton; }
 
-    public TableElementView getFindTable() { return findTable; }
+    public TableElementView getFoundTable() { return findTable; }
 }
